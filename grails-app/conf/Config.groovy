@@ -1,3 +1,19 @@
+
+grails.config.locations = []
+if ((new File("${userHome}/${appName}-config.groovy")).exists()) {
+  println "Including configuration file found in home directory: ${userHome}/${appName}-config.groovy"
+  grails.config.locations << "file:${userHome}/${appName}-config.groovy"
+}
+if (System.properties["${appName}.config.location"]) {
+  println "Including configuration file specified as system property: " + System.properties["${appName}.config.location"]
+  grails.config.locations << "file:" + System.properties["${appName}.config.location"]
+}
+if (System.getenv("${appName}.config.location") && (new File(System.getenv("${appName}.config.location"))).exists()) {
+  println "Including configuration file specified in environment: " + System.getenv("${appName}.config.location")
+  grails.config.locations << "file:" + System.getenv("${appName}.config.location")
+}
+
+
 // configuration for plugin testing - will not be included in the plugin zip
 
 log4j = {
