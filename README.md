@@ -14,7 +14,7 @@ mailchimp.apiKey = 'YOUR API KEY'
 ```
 
 Examples
--------------------------------------
+-------
     
 ```groovy
 log.info "lists"

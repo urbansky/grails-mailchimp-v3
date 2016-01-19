@@ -1,0 +1,12 @@
+<plugin name='mailchimp-v3' version='0.1' grailsVersion='2.5 &gt; *'>
+  <author>Stefan Urbansky</author>
+  <authorEmail>urbansky@e-learning-service.de</authorEmail>
+  <title>Mailchimp V3 Plugin</title>
+  <description>This is a simple wrapper for the Mailchimp REST API Version 3
+</description>
+  <documentation>http://grails.org/plugin/mailchimp-v3</documentation>
+  <type>MailchimpV3GrailsPlugin</type>
+  <resources>
+    <resource>com.nickels5.MailchimpNetworkService</resource>
+  </resources>
+</plugin>

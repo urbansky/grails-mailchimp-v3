@@ -1,4 +1,4 @@
-class GrailsMailchimpV3GrailsPlugin {
+class MailchimpV3GrailsPlugin {
     // the plugin version
     def version = "0.1"
     // the version or versions of Grails the plugin is designed for
@@ -9,7 +9,7 @@ class GrailsMailchimpV3GrailsPlugin {
     ]
 
     // TODO Fill in these fields
-    def title = "Grails Mailchimp V3 Plugin" // Headline display name of the plugin
+    def title = "Mailchimp V3 Plugin" // Headline display name of the plugin
     def author = "Stefan Urbansky"
     def authorEmail = "urbansky@e-learning-service.de"
     def description = '''\
@@ -17,7 +17,7 @@ This is a simple wrapper for the Mailchimp REST API Version 3
 '''
 
     // URL to the plugin's documentation
-    def documentation = "http://grails.org/plugin/grails-mailchimp-v3"
+    def documentation = "http://grails.org/plugin/mailchimp-v3"
 
     // Extra (optional) plugin metadata
 
