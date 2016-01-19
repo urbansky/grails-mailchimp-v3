@@ -26,6 +26,14 @@ class MailchimpNetworkService {
     }
   }
 
+  public Map patch(String endpoint, def data) {
+    execute {
+      getWebResource(endpoint).accept("application/json")
+              .header("X-HTTP-Method-Override", "PATCH")
+              .post(ClientResponse.class, new JsonBuilder(data).toString())
+    }
+  }
+
   public Map delete(String endpoint) {
     execute {
       getWebResource(endpoint).accept("application/json").delete(ClientResponse.class)
