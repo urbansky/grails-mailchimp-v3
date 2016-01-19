@@ -44,4 +44,5 @@ log.info JsonOutput.prettyPrint(result.output.toString())
 References
 ------
 
+ * [MailChimp API 3.0 Reference](http://developer.mailchimp.com/documentation/mailchimp/reference/overview/)
  * [Grails Mailchimp Plugin for API 1.3](https://github.com/happyinc/grails-mailchimp)
