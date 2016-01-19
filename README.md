@@ -47,6 +47,12 @@ result = mailchimpNetworkService.post("lists", data)
 log.info JsonOutput.prettyPrint(result.output.toString())
 ```
 
+Missing
+------
+
+ * HTTP-Update
+ * Request parameter
+ 
 References
 ------
 
