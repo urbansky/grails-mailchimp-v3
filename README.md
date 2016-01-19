@@ -14,6 +14,7 @@ In your Config.groovy you need the following lines:
 Examples
 -------------------------------------
     
+```groovy
     log.info "lists"
     def result = mailchimpNetworkService.get("lists")
     result.output.lists.each {
@@ -36,7 +37,7 @@ Examples
     log.info "create list"
     result = mailchimpNetworkService.post("lists", data)
     log.info JsonOutput.prettyPrint(result.output.toString())
-
+```
 
 References
 ------
