@@ -9,8 +9,8 @@ Configuration
 In your Config.groovy you need the following lines:
 
 ```groovy
-		mailchimp.apiUrl = 'YOUR API endpoint' // e.g. 'https://us8.api.mailchimp.com/3.0/' but this depends on which datacentre your API key is valid for
-		mailchimp.apiKey = 'YOUR API KEY'
+mailchimp.apiUrl = 'YOUR API endpoint' // e.g. 'https://us8.api.mailchimp.com/3.0/' but this depends on which datacentre your API key is valid for
+mailchimp.apiKey = 'YOUR API KEY'
 ```
 
 Examples
