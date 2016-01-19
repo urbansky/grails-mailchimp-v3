@@ -6,11 +6,17 @@ This is a simple wrapper for the Mailchimp REST API Version 3
 Configuration
 ------
 
-In your Config.groovy you need the following lines:
+In your `Config.groovy` you need the following lines:
 
 ```groovy
 mailchimp.apiUrl = 'YOUR API endpoint' // e.g. 'https://us8.api.mailchimp.com/3.0/' but this depends on which datacentre your API key is valid for
 mailchimp.apiKey = 'YOUR API KEY'
+```
+
+Install the plugin via `BuildConfig.groovy`
+
+```groovy
+compile ':mailchimp-v3:0.1'
 ```
 
 Examples
