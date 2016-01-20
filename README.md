@@ -1,6 +1,6 @@
 Grails Mailchimp V3 Plugin
 =======================
-This is a simple wrapper for the Mailchimp REST API Version 3
+This is a simple wrapper for the Mailchimp REST API Version 3 for Grails 2.
  
  
 Configuration
@@ -66,3 +66,8 @@ References
 
  * [MailChimp API 3.0 Reference](http://developer.mailchimp.com/documentation/mailchimp/reference/overview/)
  * [Grails Mailchimp Plugin for API 1.3](https://github.com/happyinc/grails-mailchimp)
+
+Release notes
+------
+
+ * v.0.1: Initial release with low-level API
