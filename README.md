@@ -19,9 +19,17 @@ Install the plugin via `BuildConfig.groovy`
 compile ':mailchimp-v3:0.1'
 ```
 
-Examples
+Usage
 -------
-    
+
+```groovy
+import com.nickels5.MailchimpNetworkService
+
+// define the service 
+MailchimpNetworkService mailchimpNetworkService
+```
+
+ 
 ```groovy
 // List all lists 
 def result = mailchimpNetworkService.get("lists")
@@ -51,6 +59,7 @@ Missing
 ------
 
  * Query string parameters
+ * High-level API
  
 References
 ------
