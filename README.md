@@ -23,7 +23,7 @@ Examples
 -------
     
 ```groovy
-log.info "lists"
+// List all lists 
 def result = mailchimpNetworkService.get("lists")
 result.output.lists.each {
   log.info it.name
@@ -50,8 +50,7 @@ log.info JsonOutput.prettyPrint(result.output.toString())
 Missing
 ------
 
- * HTTP-Update
- * Request parameter
+ * Query string parameters
  
 References
 ------
