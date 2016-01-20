@@ -29,12 +29,13 @@ result.output.lists.each {
   log.info it.name
 }
 
-log.info "automations"
+// List all automations
 result = mailchimpNetworkService.get("automations")
 result.output.automations.each {
   log.info it.settings.title
 }
 
+// Create a new list
 Map data = [
   "name":"Freddie'\''s Favorite Hats",
   "contact": ["company":"MailChimp","address1":"675 Ponce De Leon Ave NE","address2":"Suite 5000","city":"Atlanta","state":"GA","zip":"30308","country":"US","phone":""],
@@ -42,7 +43,6 @@ Map data = [
   "campaign_defaults": ["from_name":"Freddie","from_email":"freddie@freddiehats.com","subject":"","language":"en"],
   "email_type_option":true
 ]
-log.info "create list"
 result = mailchimpNetworkService.post("lists", data)
 log.info JsonOutput.prettyPrint(result.output.toString())
 ```
